@@ -1,4 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+/* Add this CSS for the navigation menu */
+#navbar {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0; /* Stick to the top of the page */
+    width: 100%; /* Make it span the whole width */
+    background-color: #333; /* Background color */
+    padding: 10px; /* Add padding */
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+/* Optional: Style for your buttons */
+.nav-button {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #0050b3;
+    margin: 5px;
+}
+
+.nav-button:hover {
+    background-color: #024493;
+}
 
 *{
   margin: 0;
@@ -12,7 +39,6 @@
     text-align: center;
     margin-top: 10px;
     padding: 20px;
-    color: #ffffff;
 }
 
 .aboutus header, .aboutus footer, .aboutus .section {
@@ -20,10 +46,12 @@
     padding: 20px; /* Generous padding for separation */
     margin: 20px 0; /* Space between sections */
     border-radius: 8px; /* Rounded corners */
+    color: white;
 }
 
 .aboutus .section {
     background-color: rgba(21, 91, 175, 0.15); /* Light blue background */
+    color: black;
 }
 .aboutus table {
     width: 100%;
